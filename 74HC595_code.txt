@@ -21,7 +21,7 @@ boolean digitalniPin[24]; //Ukupan broj digitalnih pinova
 
 void ukljucenje() {
   digitalWrite(stcp, LOW);
-  for(int i = 23; i>=0; i--) { //Broj pinova -1, jer ojanje pocinje od 0
+  for(int i = 23; i>=0; i--) { //Broj pinova -1, jer brojanje pocinje od 0
     digitalWrite(shcp, LOW);
     digitalWrite(ds, digitalniPin[i] );
     digitalWrite(shcp, HIGH);
